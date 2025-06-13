@@ -2,11 +2,16 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.Python
 
 # C extensions
 *.so
 
 # Distribution / packaging
+.env/
+venv/
+env/
+pip-wheel-metadata/
 .Python
 build/
 develop-eggs/
@@ -25,6 +30,8 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+.coverage
+.tox/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -192,3 +199,56 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# IDEs and Editors
+.vscode/        # Visual Studio Code
+.idea/          # IntelliJ IDEA / PyCharm
+*.swp           # Vim swap files
+*~              # Emacs backup files
+.DS_Store       # macOS specific
+Thumbs.db       # Windows specific
+
+# Jupyter Notebook specific ignored files
+.ipynb_checkpoints/
+*.nbdata
+*.sqlite
+
+# -----------------------------------------------------------
+# Data related ignored files (CRITICAL for large/sensitive data)
+# NEVER commit large datasets or sensitive information directly to GitHub.
+# Uncomment and customize these lines based on your actual data files.
+
+# Example: Ignore all CSV files in a specific 'data' subdirectory
+# data/*.csv
+
+# Example: Ignore specific large data files
+# Data/large_dataset.zip
+# Data/processed_data.parquet
+
+# Example: Ignore any database files (e.g., SQLite databases)
+# *.db
+# production.sqlite
+# dev.sqlite
+
+# Example: Ignore log files
+# *.log
+# logs/
+
+# -----------------------------------------------------------
+# General temporary files
+*.tmp
+*.temp
+*.bak
+
+# Environment variables files (if you use them, e.g., for API keys)
+.env
+.flaskenv
+secrets.py  # A common pattern for storing API keys
+config.ini  # Could contain sensitive config
+
+# -----------------------------------------------------------
+# Any specific files you manually want to ignore during the class
+# Add custom entries here if you find other files you don't want to commit.
+# For instance, if you generate a specific output file:
+# generated_report.pdf
+# output_metrics.json

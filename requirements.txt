@@ -1,0 +1,36 @@
+annotated-types
+distlib
+filelock
+platformdirs
+pydantic
+pydantic_core
+typing-inspection
+typing_extensions
+virtualenv
+
+python-dotenv
+langchain
+langchain-openai
+langchain-groq
+langchain-core
+langchain-community
+
+langchain_huggingface
+faiss-cpu
+langchain-google_genai
+pypdf
+
+langchain-pinecone
+
+langchain-weaviate
+weaviate-client
+
+wikipedia
+
+# 07-06-2025
+langgraph
+
+# 08-06-2025
+chromadb
+
+ipywidgets
