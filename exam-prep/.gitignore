@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local secrets and environment settings
+.env
+.env.*
+!.env-sample
+.aws/
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# AI/ML caches and generated artifacts
+.cache/
+wandb/
+mlruns/
+lightning_logs/
+tensorboard/
+chroma/
+vector_store/
+models/
+checkpoints/
+outputs/
+*.safetensors
+*.ckpt
+*.onnx
+*.pth
+*.pt
+
+# Logs
+*.log
